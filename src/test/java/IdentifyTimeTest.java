@@ -19,13 +19,15 @@ public class IdentifyTimeTest {
 
         //2
         idTime = new IdentifyTime("Kyiv");
-//        assertTrue(idTime.isIdentifyTimeZone("Kyiv"));
-//        assertTrue(idTime.isIdentifyTimeZone("Kyiv"));
+        assertTrue(idTime.getTimeZone().equals(TimeZone.getDefault()));
         idTime = new IdentifyTime("Israel");
-//        assertTrue(idTime.isIdentifyTimeZone().equals("GMT+02:00"));
+        assertTrue(idTime.getTimeZone().equals(TimeZone.getTimeZone("Israel")));
         idTime = new IdentifyTime("Iran");
+        assertTrue(idTime.getTimeZone().equals(TimeZone.getTimeZone("Iran")));
         idTime = new IdentifyTime("Jamaica");
+        assertTrue(idTime.getTimeZone().equals(TimeZone.getTimeZone("Jamaica")));
 
-
+        //3
+        idTime = new IdentifyTime("Kyiv", "GMT+02:00");
     }
 }
