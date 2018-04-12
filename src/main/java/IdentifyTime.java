@@ -28,23 +28,3 @@ public class IdentifyTime {
     }
 
 }
-
-
-
-//Example string
-
-//    TimeZone tz = TimeZone.getTimeZone("GMT+02:00");
-//        System.out.println(c.toString());
-
-
-//        System.out.println("TimeZone: " + tz.getDisplayName());
-//        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("GMT+02:00"));
-//        int hour = cal.get(Calendar.HOUR_OF_DAY);
-//        int min = cal.get(Calendar.MINUTE);
-//        int sec = cal.get(Calendar.SECOND);
-//        System.out.println(hour + ":" + min + ":" + sec);
-
-
-//        System.out.println("Системное тaйм-зона: " + TimeZone.getDefault());
-//        System.out.println(tz.toString());
-//        System.out.println(tz.getDisplayName());
