@@ -3,48 +3,21 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.TimeZone;
 
-public class GreetingPrint {
+public class GetGreeting {
 
-    private TimeZone tz;
-    private String town;
-
-    public GreetingPrint() {
-        throw new RuntimeException("Не задан город");
+    public String getGreeting() {
+        return "Ошибка. Город не задан";
     }
 
-    public GreetingPrint(String townName) {
-        town = townName;
-        tz = identifyTimeZone(townName);
-        printHello();
+    public String getGreeting(String townName) {
+        return getGreeting(townName, identifyTimeZone(townName));
     }
 
-    public GreetingPrint(String townName, String timeZone) {
-        town = townName;
-        tz = TimeZone.getTimeZone(timeZone);
-        printHello();
+    public String getGreeting(String townName, String timeZone) {
+        return getGreeting(townName, TimeZone.getTimeZone(timeZone));
     }
 
-    public TimeZone getTimeZone(){
-        return tz;
-    }
-
-    private TimeZone identifyTimeZone(String town){
-
-        String[] tzs = TimeZone.getAvailableIDs();
-        String ttown = "";
-        TimeZone gmt = TimeZone.getDefault();
-
-        for (String tz : tzs){
-            ttown = tz.substring(tz.lastIndexOf("/") + 1, tz.length());
-            if (ttown.equals(town)){
-                gmt = TimeZone.getTimeZone(ttown);
-            }
-        }
-
-        return gmt;
-    }
-
-    private void printHello() {
+    private String getGreeting(String town, TimeZone tz) {
         Calendar c = Calendar.getInstance(tz);
         String greeting="";
         Locale ruLocle = new Locale("ru", "UA");
@@ -70,7 +43,20 @@ public class GreetingPrint {
             case 5:greeting = res.getString("Night"); break;
             default: greeting = res.getString("Day"); break;
         }
+        greeting += town +"!";
+        return greeting;
+    }
 
-        System.out.println(greeting + town +"!");
+    private TimeZone identifyTimeZone(String town){
+        String[] tzs = TimeZone.getAvailableIDs();
+        String ttown = "";
+
+        for (String t : tzs){
+            ttown = t.substring(t.lastIndexOf("/") + 1, t.length());
+            if (ttown.equals(town)){
+                return TimeZone.getTimeZone(t);
+            }
+        }
+        return TimeZone.getDefault();
     }
 }
