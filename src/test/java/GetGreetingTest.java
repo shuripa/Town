@@ -1,39 +1,59 @@
 import org.junit.Test;
+import java.util.*;
+
 import static org.junit.Assert.*;
-import java.util.TimeZone;
 
 public class GetGreetingTest {
+    GetGreeting grt = new GetGreeting();
+    TimeZone tz = TimeZone.getTimeZone("Pacific/Saipan");
 
+    ResourceBundle res_en = ResourceBundle.getBundle("Greeting", Locale.getDefault());
+    ResourceBundle res_ru = ResourceBundle.getBundle("Greeting_ru_Ua", new Locale("ru", "UA"));
+//    int time
 
     @Test
-    public void testConstructorIdentifyTime(){
-//        GetGreeting gtPrint;
-//        TimeZone tz;
-//
-//        //1
-//        try {
-//            gtPrint = new GetGreeting();
-//        }catch (RuntimeException e){
-//            assertTrue(e.getMessage().equals("Не задан город"));
-//        }
-
-        //2
-//        gtPrint = new GetGreeting("Kyiv");
-//        String [] args = new String[1];
-//        args[0]="Kyiv";
-//        assertTrue("Добрый день, Kyiv!".equals(HelloTown.main(args)));
-
-//        assertEquals("Добрый день, Kyiv!", sc.nextLine());
-//        gtPrint = new GetGreeting("Oslo");
-//        assertTrue(gtPrint.getTimeZone().equals(TimeZone.getTimeZone("Europe/Oslo")));
-//        gtPrint = new GetGreeting("Jamaica");
-//        assertTrue(gtPrint.getTimeZone().equals(TimeZone.getTimeZone("Jamaica")));
-
-        //3
-//        gtPrint = new GetGreeting("Kyiv", "GMT+3");
-//        gtPrint = new GetGreeting("Oslo", "GMT+1");
-//        gtPrint = new GetGreeting("Jamaica", "GMT-6");
+    public void getGreeting() {
+        assertEquals("Ошибка. Город не задан", grt.getGreeting());
     }
 
+    @Test
+    public void getGreeting1() {
 
+    }
+
+    @Test
+    public void getGreeting2() {
+
+    }
+
+    @Test
+    public void getGreeting3() {
+        assertEquals("Good morning, Kyiv!", grt.getGreeting("Kyiv", 6, res_en));
+        assertEquals("Good night, Moscow!", grt.getGreeting("Moscow", 5, res_en));
+        assertEquals("Добрый вечер, Dnipro!", grt.getGreeting("Dnipro", 22, res_ru));
+        assertEquals("Добрый день, Saipan!", grt.getGreeting("Saipan", 12, res_ru));
+
+    }
+
+    @Test
+    public void getTimeZone() {
+        assertEquals(grt.getTimeZone("Saipan"), tz);
+        assertEquals(grt.getTimeZone("Kyiv"), TimeZone.getDefault());
+    }
+
+    @Test
+    public void getHour() {
+        int h = Calendar.getInstance(tz).get(Calendar.HOUR_OF_DAY);
+        assertTrue(h == grt.getHour(tz));
+    }
+
+    @Test
+    public void getRes() {
+        Locale loc1 = new Locale.Builder().setLanguage("ru").setRegion("UA").build();
+        Locale loc2 = new Locale.Builder().setLanguage("xx").setRegion("XX").build();
+        Locale loc3 = null;
+        assertEquals("Добрый вечер, ", grt.getRes(loc1).getString("Evening"));
+        assertEquals("Good morning, ", grt.getRes(loc2).getString("Morning"));
+        assertEquals("Good day, ", grt.getRes(loc3).getString("Day"));
+    }
 }
