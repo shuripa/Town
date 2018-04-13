@@ -63,10 +63,10 @@ public class GetGreeting {
 
     public ResourceBundle getRes(Locale locale) {
         try {
-            switch (locale.getDisplayLanguage()){
-                case "русский"  : return ResourceBundle.getBundle("Greeting_ru_Ua", locale);
-                default         : return ResourceBundle.getBundle("Greeting", locale);
-            }
+            if (locale.getDisplayLanguage().equals("русский")){
+                return ResourceBundle.getBundle("Greeting_ru_Ua", locale);
+            } else
+                return ResourceBundle.getBundle("Greeting", locale);
         }catch (NullPointerException e) {
             return ResourceBundle.getBundle("Greeting", Locale.getDefault());
         }
