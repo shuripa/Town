@@ -7,7 +7,7 @@ public class GetGreeting {
 
 
     public String getGreeting() {
-        return "Ошибка. Город не задан";
+        return "??????. ????? ?? ?????.";
     }
 
     public String getGreeting(String townName) {
@@ -63,7 +63,7 @@ public class GetGreeting {
 
     public ResourceBundle getRes(Locale locale) {
         try {
-            if (locale.getDisplayLanguage().equals("русский")){
+            if (locale.getDisplayLanguage().equals("???????")){
                 return ResourceBundle.getBundle("Greeting_ru_Ua", locale);
             } else
                 return ResourceBundle.getBundle("Greeting", locale);

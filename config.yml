@@ -19,7 +19,7 @@ jobs:
     environment:
       # Customize the JVM maximum heap limit
       MAVEN_OPTS: -Xmx3200m
-      LANG: ISO-8859-1
+      LANG: windows-1251
     
     steps:
       - checkout

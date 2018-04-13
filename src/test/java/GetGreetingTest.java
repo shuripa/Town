@@ -19,7 +19,7 @@ public class GetGreetingTest {
     public void getGreeting() throws UnsupportedEncodingException {
 //        String s = new String(grt.getGreeting().getBytes(),);
 
-        assertEquals("Ошибка. Город не задан", grt.getGreeting());
+        assertEquals("??????. ????? ?? ?????.", grt.getGreeting());
     }
 
     @Test
@@ -34,12 +34,12 @@ public class GetGreetingTest {
     public void getGreeting3() throws UnsupportedEncodingException {
 //        System.out.println(grt.getGreeting("Dnipro", 22, res_ru));
 //        return new String(val.getBytes("ISO-8859-1"), "UTF-8");
-        String s = new String(grt.getGreeting("Dnipro", 22, res_ru).getBytes("UTF-8"), "ISO-8859-1");
-        System.out.println(s);
+//        String s = new String(grt.getGreeting("Dnipro", 22, res_ru).getBytes("UTF-8"), "ISO-8859-1");
+//        System.out.println(s);
         assertEquals("Good morning, Kyiv!", grt.getGreeting("Kyiv", 6, res_en));
         assertEquals("Good night, Moscow!", grt.getGreeting("Moscow", 5, res_en));
-//        assertEquals("Добрый вечер, Dnipro!", grt.getGreeting("Dnipro", 22, res_ru));
-//        assertEquals("Добрый день, Saipan!", grt.getGreeting("Saipan", 12, res_ru));
+        assertEquals("Добрый вечер, Dnipro!", grt.getGreeting("Dnipro", 22, res_ru));
+//        assertEquals("?????? ????, Saipan!", grt.getGreeting("Saipan", 12, res_ru));
 
     }
 
@@ -61,7 +61,7 @@ public class GetGreetingTest {
         Locale loc1 = new Locale.Builder().setLanguage("ru").setRegion("UA").build();
         Locale loc2 = new Locale.Builder().setLanguage("xx").setRegion("XX").build();
         Locale loc3 = null;
-//        assertEquals("Добрый вечер, ", grt.getRes(loc1).getString("Evening"));
+//        assertEquals("?????? ?????, ", grt.getRes(loc1).getString("Evening"));
         assertEquals("Good morning, ", grt.getRes(loc2).getString("Morning"));
         assertEquals("Good day, ", grt.getRes(loc3).getString("Day"));
 
