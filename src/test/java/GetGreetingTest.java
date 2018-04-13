@@ -13,7 +13,7 @@ public class GetGreetingTest {
 
     @Test
     public void getGreeting() {
-//        assertEquals("Ошибка. Город не задан", grt.getGreeting());
+        assertEquals("РћС€РёР±РєР°. Р“РѕСЂРѕРґ РЅРµ Р·Р°РґР°РЅ", grt.getGreeting());
     }
 
     @Test
@@ -30,8 +30,8 @@ public class GetGreetingTest {
     public void getGreeting3() {
 //        assertEquals(String("Good morning, Kyiv!","UTF-8"), grt.getGreeting("Kyiv", 6, res_en));
 //        assertEquals("Good night, Moscow!", grt.getGreeting("Moscow", 5, res_en));
-//        assertEquals("Добрый вечер, Dnipro!", grt.getGreeting("Dnipro", 22, res_ru));
-//        assertEquals("Добрый день, Saipan!", grt.getGreeting("Saipan", 12, res_ru));
+//        assertEquals("Р”РѕР±СЂС‹Р№ РІРµС‡РµСЂ, Dnipro!", grt.getGreeting("Dnipro", 22, res_ru));
+//        assertEquals("Р”РѕР±СЂС‹Р№ РґРµРЅСЊ, Saipan!", grt.getGreeting("Saipan", 12, res_ru));
 
     }
 
@@ -52,7 +52,7 @@ public class GetGreetingTest {
 //        Locale loc1 = new Locale.Builder().setLanguage("ru").setRegion("UA").build();
 //        Locale loc2 = new Locale.Builder().setLanguage("xx").setRegion("XX").build();
         Locale loc3 = null;
-//        assertEquals("Добрый вечер, ", grt.getRes(loc1).getString("Evening"));
+//        assertEquals("Р”РѕР±СЂС‹Р№ РІРµС‡РµСЂ, ", grt.getRes(loc1).getString("Evening"));
 //        assertEquals("Good morning, ", grt.getRes(loc2).getString("Morning"));
         assertEquals("Good day, ", grt.getRes(loc3).getString("Day"));
     }
