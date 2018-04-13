@@ -23,7 +23,7 @@
 
 
     <properties>
-        <project.build.sourceEncoding>UTF-8-BOM</project.build.sourceEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
 </project>
