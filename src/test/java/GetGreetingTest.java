@@ -33,8 +33,8 @@ public class GetGreetingTest {
 //        String s1 = new String("?????? ?????, Dnipro!".getBytes(),"windows-1251") ;
 //        String s2 = new String(grt.getGreeting("Dnipro", 22, res_ru).getBytes(), "windows-1251");
 //        assertEquals("?????? ?????, Dnipro!", s2);
-        System.out.println(new String(grt.getGreeting("Dnipro", 22, res_ru).getBytes(), "windows-1251"));
-        System.out.println(grt.getGreeting("Dnipro", 22, res_ru));
+//        System.out.println(new String(grt.getGreeting("Dnipro", 22, res_ru).getBytes(), "windows-1251"));
+//        System.out.println(grt.getGreeting("Dnipro", 22, res_ru));
         assertEquals("Good morning, Kyiv!", grt.getGreeting("Kyiv", 6, res_en));
         assertEquals("Good night, Moscow!", grt.getGreeting("Moscow", 5, res_en));
         assertEquals("Добрый вечер, Dnipro!", grt.getGreeting("Dnipro", 22, res_ru));
