@@ -4,13 +4,13 @@ import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class HelloTown {
+public class Town {
 
      public static void main(String[] args) throws UnsupportedEncodingException {
-         Logger lg = Logger.getLogger(HelloTown.class.getName());
+         Logger lg = Logger.getLogger(Town.class.getName());
 
          try {
-            FileHandler fh = new FileHandler("town.log");
+            FileHandler fh = new FileHandler("town.log",500,1,true);
             lg.addHandler(fh);
          }catch (IOException e){
              lg.log(Level.WARNING, "Нет доступа к лог-файлу town.log", e.getMessage());
