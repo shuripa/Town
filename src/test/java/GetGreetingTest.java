@@ -14,24 +14,12 @@ import static org.junit.Assert.*;
 
 
 public class GetGreetingTest {
-    private static Logger lg;
     GetGreeting grt = new GetGreeting();
     TimeZone tz = TimeZone.getTimeZone("Pacific/Saipan");
 
     ResourceBundle res_en = ResourceBundle.getBundle("greet", new Locale("en"));
     ResourceBundle res_ru = ResourceBundle.getBundle("greet", new Locale("ru"));
     ResourceBundle res_xx = ResourceBundle.getBundle("greet", new Locale("xx"));
-
-    @Before
-    public static void init() {
-        lg = Logger.getLogger(Town.class.getName());
-        try {
-            FileHandler fh = new FileHandler("town.log");
-            lg.addHandler(fh);
-        } catch (IOException e) {
-            lg.log(Level.WARNING, "Нет доступа к лог-файлу town.log", e.getMessage());
-        }
-    }
 
     @Test
     public void getGreeting() throws UnsupportedEncodingException {
@@ -54,12 +42,10 @@ public class GetGreetingTest {
 //        return new String(val.getBytes("ISO-8859-1"), "UTF-8");
 //        String s = new String(grt.getGreeting("Dnipro", 22, res_ru).getBytes("UTF-8"), "ISO-8859-1");
 //        System.out.println(s);
-        lg.log(Level.INFO, "Начинается тест: getGreeting3()");
         assertEquals("Good morning, Kyiv!", grt.getGreeting("Kyiv", 6, res_en));
         assertEquals("Good night, Moscow!", grt.getGreeting("Moscow", 5, res_en));
         assertEquals("Добрый вечер, Dnipro!", grt.getGreeting("Dnipro", 22, res_ru));
 //        assertEquals("?????? ????, Saipan!", grt.getGreeting("Saipan", 12, res_ru));
-        lg.log(Level.INFO, "Пройден тест: getGreeting3()");
     }
 
     @Test
@@ -86,4 +72,7 @@ public class GetGreetingTest {
 //        assertEquals("Good day, ", grt.getRes(loc3).getString("Day"));
 
     }
+
+    @Test
+    public void encode(){};
 }

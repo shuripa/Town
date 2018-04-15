@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-</log>
+[2018-04-15 06:56:32][INFO   ]  Without argument                                  {Town main}
+[2018-04-15 06:56:33][INFO   ]  You should use arguments <town> [GMT+0]           {GetGreeting getGreeting}
+[2018-04-15 07:12:25][INFO   ]  Without argument                                  {Town main}
+[2018-04-15 07:13:02][INFO   ]  Without argument                                  {Town main}
+[2018-04-15 07:13:29][INFO   ]  Without argument                                  {Town main}
+[2018-04-15 07:13:46][INFO   ]  Without argument                                  {Town main}
+[2018-04-15 07:37:50][INFO   ]  Submitted one argument                            {Town main}
+[2018-04-15 07:37:50][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 07:39:16][INFO   ]  Submitted one argument                            {Town main}
+[2018-04-15 07:39:16][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 07:39:58][INFO   ]  Submitted one argument                            {Town main}
+[2018-04-15 07:39:58][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 07:40:31][INFO   ]  Without argument                                  {Town main}
+[2018-04-15 07:40:52][INFO   ]  Submitted one argument                            {Town main}
+[2018-04-15 07:40:52][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 07:41:28][INFO   ]  Submitted one argument                            {Town main}
+[2018-04-15 07:41:28][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 07:41:28][INFO   ]  End chenge greeting                               {Town main}
+[2018-04-15 07:42:03][INFO   ]  Submitted one argument                            {Town main}
+[2018-04-15 07:42:03][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 07:42:03][INFO   ]  End                                               {Town main}
+[2018-04-15 07:42:17][INFO   ]  Submitted one argument                            {Town main}
+[2018-04-15 07:42:17][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 07:42:17][INFO   ]  End                                               {Town main}
+[2018-04-15 07:42:21][INFO   ]  Submitted one argument                            {Town main}
+[2018-04-15 07:42:22][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 07:42:22][INFO   ]  End                                               {Town main}
+[2018-04-15 07:43:59][INFO   ]  Submitted one argument                            {Town main}
+[2018-04-15 07:43:59][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 07:43:59][INFO   ]  end                                               {Town main}
+[2018-04-15 07:58:26][INFO   ]  Submitted one argument                            {GetGreeting getGreeting}
+[2018-04-15 07:58:26][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 07:58:26][INFO   ]  end                                               {GetGreeting getGreeting}
+[2018-04-15 08:02:23][INFO   ]  Submitted one argument                            {GetGreeting getGreeting}
+[2018-04-15 08:02:23][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 08:02:23][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-15 08:02:23][INFO   ]  end                                               {GetGreeting getGreeting}
+[2018-04-15 08:06:42][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 08:06:42][INFO   ]  Timezone is default                               {GetGreeting getTimeZone}
+[2018-04-15 08:06:42][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-15 08:06:42][INFO   ]  end                                               {GetGreeting getGreeting}
+[2018-04-15 08:11:48][INFO   ]  Timezone is changed                               {GetGreeting getTimeZone}
+[2018-04-15 08:11:48][INFO   ]  Timezone is default                               {GetGreeting getTimeZone}
+[2018-04-15 08:11:48][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-15 08:11:48][INFO   ]  end                                               {GetGreeting getGreeting}
+[2018-04-15 08:11:48][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-15 08:11:48][INFO   ]  end                                               {GetGreeting getGreeting}
+[2018-04-15 08:11:48][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-15 08:11:48][INFO   ]  end                                               {GetGreeting getGreeting}
