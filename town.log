@@ -1,89 +1,79 @@
-[2018-04-16 09:10:23][INFO   ]  Without argument                                  {GetGreeting getGreeting}
-[2018-04-16 09:10:23][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:10:23][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:10:23][INFO   ]  Submitted one argument                            {GetGreeting getGreeting}
-[2018-04-16 09:10:23][INFO   ]  Timezone is default                               {GetGreeting getTimeZoneInTown}
-[2018-04-16 09:10:23][INFO   ]  Get time is done: 9                               {GetGreeting getHour}
-[2018-04-16 09:10:23][INFO   ]  Town = AnyTown; Time = 9; Res = ru                {GetGreeting getGreeting}
-[2018-04-16 09:10:23][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
-[2018-04-16 09:10:23][INFO   ]  --- Return greeting: Добрый день, AnyTown! ---    {GetGreeting getGreeting}
-[2018-04-16 09:10:23][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:10:23][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:10:23][INFO   ]  Submitted one argument                            {GetGreeting getGreeting}
-[2018-04-16 09:10:23][INFO   ]  Timezone is default                               {GetGreeting getTimeZoneInTown}
-[2018-04-16 09:10:23][INFO   ]  Get time is done: 9                               {GetGreeting getHour}
-[2018-04-16 09:10:23][INFO   ]  Town = AnyTown; Time = 9; Res = ru                {GetGreeting getGreeting}
-[2018-04-16 09:10:23][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
-[2018-04-16 09:10:23][INFO   ]  --- Return greeting: Добрый день, AnyTown! ---    {GetGreeting getGreeting}
-[2018-04-16 09:10:23][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:10:23][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:10:23][INFO   ]  Submitted one argument                            {GetGreeting getGreeting}
-[2018-04-16 09:10:23][INFO   ]  Timezone is default                               {GetGreeting getTimeZoneInTown}
-[2018-04-16 09:10:23][INFO   ]  Get time is done: 9                               {GetGreeting getHour}
-[2018-04-16 09:10:23][INFO   ]  Town = AnyTown; Time = 9; Res = ru                {GetGreeting getGreeting}
-[2018-04-16 09:10:23][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
-[2018-04-16 09:10:23][INFO   ]  --- Return greeting: Добрый день, AnyTown! ---    {GetGreeting getGreeting}
-[2018-04-16 09:11:45][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:11:45][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:11:45][INFO   ]  Without argument                                  {GetGreeting getGreeting}
-[2018-04-16 09:11:45][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:11:45][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:11:45][INFO   ]  Submitted one argument                            {GetGreeting getGreeting}
-[2018-04-16 09:11:45][INFO   ]  Timezone is default                               {GetGreeting getTimeZoneInTown}
-[2018-04-16 09:11:45][INFO   ]  Get time is done: 9                               {GetGreeting getHour}
-[2018-04-16 09:11:45][INFO   ]  Town = AnyTown; Time = 9; Res = ru                {GetGreeting getGreeting}
-[2018-04-16 09:11:45][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
-[2018-04-16 09:11:45][INFO   ]  --- Return greeting: Добрый день, AnyTown! ---    {GetGreeting getGreeting}
-[2018-04-16 09:16:34][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:16:34][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:16:34][INFO   ]  Without argument                                  {GetGreeting getGreeting}
-[2018-04-16 09:16:34][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:16:34][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:16:34][INFO   ]  Submitted one argument                            {GetGreeting getGreeting}
-[2018-04-16 09:16:34][INFO   ]  Timezone is default                               {GetGreeting getTimeZoneInTown}
-[2018-04-16 09:16:34][INFO   ]  Get time is done: 9                               {GetGreeting getHour}
-[2018-04-16 09:16:34][INFO   ]  Town = AnyTown; Time = 9; Res = ru                {GetGreeting getGreeting}
-[2018-04-16 09:16:35][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
-[2018-04-16 09:16:35][INFO   ]  --- Return greeting: Добрый день, AnyTown! ---    {GetGreeting getGreeting}
-[2018-04-16 09:16:35][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:16:35][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:16:35][INFO   ]  Submited two arguments                            {GetGreeting getGreeting}
-[2018-04-16 09:16:35][INFO   ]  Get time is done: 6                               {GetGreeting getHour}
-[2018-04-16 09:16:35][INFO   ]  Town = AnyTown; Time = 6; Res = ru                {GetGreeting getGreeting}
-[2018-04-16 09:16:35][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
-[2018-04-16 09:16:35][INFO   ]  --- Return greeting: Доброе утро, AnyTown! ---    {GetGreeting getGreeting}
-[2018-04-16 09:16:35][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:16:35][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:16:35][INFO   ]  Submited two arguments                            {GetGreeting getGreeting}
-[2018-04-16 09:16:35][INFO   ]  Get time is done: 6                               {GetGreeting getHour}
-[2018-04-16 09:16:35][INFO   ]  Town = AnyTown; Time = 6; Res = ru                {GetGreeting getGreeting}
-[2018-04-16 09:16:35][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
-[2018-04-16 09:16:35][INFO   ]  --- Return greeting: Доброе утро, AnyTown! ---    {GetGreeting getGreeting}
-[2018-04-16 09:17:13][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:17:13][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:17:13][INFO   ]  Without argument                                  {GetGreeting getGreeting}
-[2018-04-16 09:17:13][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:17:13][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:17:13][INFO   ]  Submitted one argument                            {GetGreeting getGreeting}
-[2018-04-16 09:17:13][INFO   ]  Timezone is default                               {GetGreeting getTimeZoneInTown}
-[2018-04-16 09:17:13][INFO   ]  Get time is done: 9                               {GetGreeting getHour}
-[2018-04-16 09:17:13][INFO   ]  Town = AnyTown; Time = 9; Res = ru                {GetGreeting getGreeting}
-[2018-04-16 09:17:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
-[2018-04-16 09:17:13][INFO   ]  --- Return greeting: Добрый день, AnyTown! ---    {GetGreeting getGreeting}
-[2018-04-16 09:17:13][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:17:13][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:17:13][INFO   ]  Submited two arguments                            {GetGreeting getGreeting}
-[2018-04-16 09:17:13][INFO   ]  Get time is done: 6                               {GetGreeting getHour}
-[2018-04-16 09:17:13][INFO   ]  Town = AnyTown; Time = 6; Res = ru                {GetGreeting getGreeting}
-[2018-04-16 09:17:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
-[2018-04-16 09:17:13][INFO   ]  --- Return greeting: Доброе утро, AnyTown! ---    {GetGreeting getGreeting}
-[2018-04-16 09:17:13][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:17:13][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:17:13][INFO   ]  Submited two arguments                            {GetGreeting getGreeting}
-[2018-04-16 09:17:13][INFO   ]  Get time is done: 6                               {GetGreeting getHour}
-[2018-04-16 09:17:13][INFO   ]  Town = AnyTown; Time = 6; Res = ru                {GetGreeting getGreeting}
-[2018-04-16 09:17:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
-[2018-04-16 09:17:13][INFO   ]  --- Return greeting: Доброе утро, AnyTown! ---    {GetGreeting getGreeting}
-[2018-04-16 09:17:19][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
-[2018-04-16 09:17:19][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
-[2018-04-16 09:17:19][INFO   ]  Without argument                                  {GetGreeting getGreeting}
+[2018-04-16 09:45:02][INFO   ]  --- Return greeting: Добрый вечер, G22! ---       {GetGreeting getGreeting}
+[2018-04-16 09:45:02][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:02][INFO   ]  --- Return greeting: Доброй ночи, G24! ---        {GetGreeting getGreeting}
+[2018-04-16 09:45:02][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:02][INFO   ]  --- Return greeting: Good day, G25! ---           {GetGreeting getGreeting}
+[2018-04-16 09:45:12][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-16 09:45:12][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-16 09:45:12][INFO   ]  Without argument                                  {GetGreeting getGreeting}
+[2018-04-16 09:45:12][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-16 09:45:12][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-16 09:45:12][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-16 09:45:12][INFO   ]  Get res is done: en                               {GetGreeting getRes}
+[2018-04-16 09:45:12][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-16 09:45:12][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-16 09:45:12][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-16 09:45:12][INFO   ]  Get time is done: 16                              {GetGreeting getHour}
+[2018-04-16 09:45:12][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-16 09:45:12][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-16 09:45:12][INFO   ]  Timezone is changed: Pacific/Saipan               {GetGreeting getTimeZoneInTown}
+[2018-04-16 09:45:12][INFO   ]  Timezone is default                               {GetGreeting getTimeZoneInTown}
+[2018-04-16 09:45:12][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-16 09:45:12][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-16 09:45:12][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:12][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:12][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-16 09:45:12][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-16 09:45:12][INFO   ]  Timezone is changed: Europe/Moscow                {GetGreeting getTimeZoneInTown}
+[2018-04-16 09:45:12][INFO   ]  Get time is done: 9                               {GetGreeting getHour}
+[2018-04-16 09:45:12][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:12][INFO   ]  --- Return greeting: Добрый день, Moscow! ---     {GetGreeting getGreeting}
+[2018-04-16 09:45:12][INFO   ]  Submitted one argument                            {GetGreeting getGreeting}
+[2018-04-16 09:45:12][INFO   ]  Timezone is changed: Europe/Moscow                {GetGreeting getTimeZoneInTown}
+[2018-04-16 09:45:12][INFO   ]  Get time is done: 9                               {GetGreeting getHour}
+[2018-04-16 09:45:12][INFO   ]  Town = Moscow; Time = 9; Res = ru                 {GetGreeting getGreeting}
+[2018-04-16 09:45:12][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:12][INFO   ]  --- Return greeting: Добрый день, Moscow! ---     {GetGreeting getGreeting}
+[2018-04-16 09:45:12][INFO   ]  Get time is done: 9                               {GetGreeting getHour}
+[2018-04-16 09:45:12][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:12][INFO   ]  --- Return greeting: Добрый день, Dnipro! ---     {GetGreeting getGreeting}
+[2018-04-16 09:45:12][INFO   ]  Submitted one argument                            {GetGreeting getGreeting}
+[2018-04-16 09:45:12][INFO   ]  Timezone is default                               {GetGreeting getTimeZoneInTown}
+[2018-04-16 09:45:12][INFO   ]  Get time is done: 9                               {GetGreeting getHour}
+[2018-04-16 09:45:12][INFO   ]  Town = Dnipro; Time = 9; Res = ru                 {GetGreeting getGreeting}
+[2018-04-16 09:45:12][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:12][INFO   ]  --- Return greeting: Добрый день, Dnipro! ---     {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-16 09:45:13][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-16 09:45:13][INFO   ]  Get time is done: 17                              {GetGreeting getHour}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Добрый день, Moscow! ---     {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Submited two arguments                            {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Get time is done: 17                              {GetGreeting getHour}
+[2018-04-16 09:45:13][INFO   ]  Town = Moscow; Time = 17; Res = ru                {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Добрый день, Moscow! ---     {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Get time is done: 19                              {GetGreeting getHour}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Добрый вечер, Dnipro! ---    {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Submited two arguments                            {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Get time is done: 19                              {GetGreeting getHour}
+[2018-04-16 09:45:13][INFO   ]  Town = Dnipro; Time = 19; Res = ru                {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Добрый вечер, Dnipro! ---    {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-16 09:45:13][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Добрый день, G-1! ---        {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Доброй ночи, G0! ---         {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Good morning, G6! ---        {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Good day, G9! ---            {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Добрый вечер, G22! ---       {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Доброй ночи, G24! ---        {GetGreeting getGreeting}
+[2018-04-16 09:45:13][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-16 09:45:13][INFO   ]  --- Return greeting: Good day, G25! ---           {GetGreeting getGreeting}
