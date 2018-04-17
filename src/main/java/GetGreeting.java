@@ -1,31 +1,19 @@
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.TimeZone;
-import java.util.logging.*;
 
 public class GetGreeting {
-    final String N = "Night";
-    final String M = "Morning";
-    final String D = "Day";
-    final String E = "Evening";
-    final String [] timeOfDays = {N, N, N, N, N, N, M, M, M, D, D, D, D, D, D, D, D, D, D, E, E, E, E, N, N};
-    final Logger lf;
+    private final String N = "Night";
+    private final String M = "Morning";
+    private final String D = "Day";
+    private final String E = "Evening";
+    private final String [] timeOfDays = {N, N, N, N, N, N, M, M, M, D, D, D, D, D, D, D, D, D, D, E, E, E, E, N, N};
+    static final org.apache.log4j.Logger LOGGER = org.apache.log4j.Logger.getLogger(Town.class.getSimpleName());
 
     public GetGreeting() {
-        //TODO: Change logger
-        lf = Logger.getLogger(Town.class.getName());
- 
-        System.setProperty("java.util.logging.SimpleFormatter.format", "[%1$tF %1$tT][%4$-7s]  %5$-50s{%2$s}%n");
-        try {
-            FileHandler fh = new FileHandler("town.log",10000,1,true);
-            fh.setFormatter(new SimpleFormatter());
-            lf.addHandler(fh);
-        }catch (IOException e){
-            lf.log(Level.WARNING, "Don't access file town.log", e.getMessage());
-        }
+        //Changed log4j logger
     }
     
     //Changed swithc-case
@@ -40,7 +28,7 @@ public class GetGreeting {
 
     public Locale getLocale (){
         Locale l = Locale.getDefault();
-        lf.log(Level.INFO, "Get system locale is done: " + l.getLanguage());
+        LOGGER.info("Get system locale is done: " + l.getLanguage());
         return l;
     }
 
@@ -51,31 +39,30 @@ public class GetGreeting {
         for (String t : tz){
             tn = t.substring(t.lastIndexOf("/") + 1, t.length());
             if (tn.equals(town)){
-                
-                lf.log(Level.INFO, "Timezone is changed: " + t);
+                LOGGER.info("Timezone is changed: " + t);
                 return TimeZone.getTimeZone(t);
             }
         }
-        lf.log(Level.INFO, "Timezone is default");
+        LOGGER.info("Timezone is UTC");
         //Correction Time Zone
         return TimeZone.getTimeZone("UTC");
     }
 
     public String getHour(TimeZone tz){
         String h = "" + Calendar.getInstance(tz).get(Calendar.HOUR_OF_DAY);
-        lf.log(Level.INFO, "Get time is done: " + h);
+        LOGGER.info("Get time is done: " + h);
         return h;
     }
 
     public ResourceBundle getRes(Locale locale) {
         ResourceBundle res = ResourceBundle.getBundle("greet", locale);
-        lf.log(Level.INFO, "Get res is done: " + res.getLocale().getLanguage());
+        LOGGER.info("Get res is done: " + res.getLocale().getLanguage());
         return res;
     }
     
     public String encode(String key, ResourceBundle localRes) throws UnsupportedEncodingException {
         String encode = new String(localRes.getString(key).getBytes("ISO-8859-1"), "ISO-8859-5");
-        lf.log(Level.INFO, "Encoding is done");
+        LOGGER.info("Encoding is done");
         return encode;
     }
 }

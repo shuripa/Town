@@ -1,5 +1,3 @@
-import java.util.logging.Level;
-
 public class GetGreetingWhisoutArgs extends GetGreeting {
 
     public GetGreetingWhisoutArgs(){
@@ -7,7 +5,7 @@ public class GetGreetingWhisoutArgs extends GetGreeting {
     }
     
     public String getGreeting(String [] args) {
-        lf.log(Level.INFO, "Without argument");
+        LOGGER.info("Without argument");
         return "You should use arguments > Town [GMT+0]";
     }
 }
