@@ -42,3 +42,28 @@
 [2018-04-17 07:45:33][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
 [2018-04-17 07:45:33][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
 [2018-04-17 07:45:33][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-17 11:44:36][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-17 11:44:36][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-17 11:44:36][INFO   ]  Submitted one argument                            {GetGreetingWhisOneArg getGreeting}
+[2018-04-17 11:44:36][INFO   ]  Timezone is default                               {GetGreeting getTimeZoneInTown}
+[2018-04-17 11:44:37][INFO   ]  Get time is done: 11                              {GetGreeting getHour}
+[2018-04-17 11:44:37][INFO   ]  Town = Los Angeles; Time = 11; Res = ru           {GetGreetingWhisOneArg getGreeting}
+[2018-04-17 11:44:37][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-17 11:45:18][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-17 11:45:18][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-17 11:45:18][INFO   ]  Submited two arguments                            {GetGreetingWhisTwoArgs getGreeting}
+[2018-04-17 11:45:18][INFO   ]  Get time is done: 19                              {GetGreeting getHour}
+[2018-04-17 11:45:18][INFO   ]  Town = Los Angeles; Time = 19; Res = ru           {GetGreetingWhisTwoArgs getGreeting}
+[2018-04-17 11:45:18][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-17 12:01:35][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-17 12:01:35][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-17 12:01:35][INFO   ]  Submited two arguments                            {GetGreetingWhisTwoArgs getGreeting}
+[2018-04-17 12:01:35][INFO   ]  Get time is done: 20                              {GetGreeting getHour}
+[2018-04-17 12:01:35][INFO   ]  Town = Los Angeles; Time = 20; Res = ru           {GetGreetingWhisTwoArgs getGreeting}
+[2018-04-17 12:01:35][INFO   ]  Encoding is done                                  {GetGreeting getEncode}
+[2018-04-17 12:22:00][INFO   ]  Submited two arguments                            {GetGreetingWhisTwoArgs getGreeting}
+[2018-04-17 12:22:00][INFO   ]  Get time is done: 20                              {GetGreeting getHour}
+[2018-04-17 12:22:00][INFO   ]  Town = Los Angeles; Time = 20                     {GetGreetingWhisTwoArgs getGreeting}
+[2018-04-17 12:22:00][INFO   ]  Get system locale is done: ru                     {GetGreeting getLocale}
+[2018-04-17 12:22:00][INFO   ]  Get res is done: ru                               {GetGreeting getRes}
+[2018-04-17 12:22:00][INFO   ]  Encoding is done                                  {GetGreeting encode}

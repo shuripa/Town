@@ -1,28 +1,14 @@
-
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.InvocationTargetException;
 
 public class Town {
-    
-     public static void main(String[] args) throws UnsupportedEncodingException {
-        
-        String greet = getGreeting(args);
-        System.out.println(greet);
-     }
-
-    public static String getGreeting(String[] args) throws UnsupportedEncodingException {
-        GetGreeting gt = new GetGreeting();
-        String greet = "";
-        //TODO: Chenge svitch-case
-        switch (args.length) {
-            case 0: greet = gt.getGreeting();
-                break;
-            case 1: greet = gt.getGreeting(args[0]);
-                break;
-            case 2: greet = gt.getGreeting(args[0], args[1]);
-                break;
-            default:   greet = gt.getGreeting(args[0], args[1]);
-                break;
-        }
-        return greet;
+    //Changed swithc-case
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, UnsupportedEncodingException {
+        String[] clName = {"GetGreetingWhisoutArgs", "GetGreetingWhisOneArg", "GetGreetingWhisTwoArgs"};
+        int cnt = (args.length >2)? 2: args.length;
+         
+        GetGreeting grt = (GetGreeting) Class.forName(clName[cnt]).getConstructor().newInstance();
+        String result = grt.getGreeting(args);
+        System.out.println(result); 
     }
 }
