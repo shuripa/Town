@@ -1,5 +1,3 @@
-import com.sun.istack.internal.NotNull;
-
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
@@ -9,10 +7,14 @@ import java.util.TimeZone;
 import java.util.logging.*;
 
 public class GetGreeting {
-
-    private final Logger lf;
-    private int hour;
-    private ResourceBundle res;
+    final String N = "Night";
+    final String M = "Morning";
+    final String D = "Day";
+    final String E = "Evening";
+    final String [] timeOfDays = {N, N, N, N, N, N, M, M, M, D, D, D, D, D, D, D, D, D, D, E, E, E, E, N, N};
+    final Logger lf;
+    int hour;
+    ResourceBundle res;
 
     public GetGreeting() {
         //TODO: Change logger
@@ -47,34 +49,12 @@ public class GetGreeting {
         lf.log(Level.INFO,"Town = " + town + "; Time = "+ hour + "; " + "Res = " + res.getLocale().getLanguage());
         return getGreeting(town, hour, res);
     }
-    //TODO: Change swithc
+    
+    //TODO: Changed swithc-case
     public String getGreeting(String town, int localHour, ResourceBundle localRes) throws UnsupportedEncodingException {
-        String greeting="";
-        
-        switch (localHour){
-            case 19:
-            case 20:
-            case 21:
-            case 22: greeting =  getEncode("Evening", localRes) + town +"!"; 
-                break;
-            case 23:
-            case 24:    
-            case 0:
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5: greeting =  getEncode("Night", localRes) + town +"!"; 
-                break;
-            case 6:
-            case 7:
-            case 8: greeting = getEncode("Morning", localRes) + town +"!";
-                break;
-            default: greeting =  getEncode("Day", localRes) + town +"!";
-                break;
-        }
-        lf.log(Level.INFO, "--- Return greeting: " + greeting + " ---");
-        return greeting;
+        String s = "Day";
+        if (localHour> -1 && localHour < 25) s = timeOfDays[localHour];
+        return getEncode(s, localRes) + town +"!";
     }
 
     public TimeZone getTimeZoneInTown(String town){

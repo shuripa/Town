@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 
 
 public class GetGreetingTest {
-//    TODO ????
+    //TODO: Chek this.
     GetGreeting grt = new GetGreeting();
     TimeZone tz = TimeZone.getTimeZone("Pacific/Saipan");
     int t;

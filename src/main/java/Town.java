@@ -2,7 +2,7 @@
 import java.io.UnsupportedEncodingException;
 
 public class Town {
-
+    
      public static void main(String[] args) throws UnsupportedEncodingException {
         
         String greet = getGreeting(args);
@@ -12,7 +12,7 @@ public class Town {
     public static String getGreeting(String[] args) throws UnsupportedEncodingException {
         GetGreeting gt = new GetGreeting();
         String greet = "";
-
+        //TODO: Chenge svitch-case
         switch (args.length) {
             case 0: greet = gt.getGreeting();
                 break;
