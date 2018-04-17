@@ -1,3 +1,5 @@
+import com.sun.istack.internal.NotNull;
+
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
@@ -13,6 +15,7 @@ public class GetGreeting {
     private ResourceBundle res;
 
     public GetGreeting() {
+        //TODO: Change logger
         lf = Logger.getLogger(Town.class.getName());
         
         System.setProperty("java.util.logging.SimpleFormatter.format", "[%1$tF %1$tT][%4$-7s]  %5$-50s{%2$s}%n");
@@ -44,15 +47,16 @@ public class GetGreeting {
         lf.log(Level.INFO,"Town = " + town + "; Time = "+ hour + "; " + "Res = " + res.getLocale().getLanguage());
         return getGreeting(town, hour, res);
     }
-
+    //TODO: Change swithc
     public String getGreeting(String town, int localHour, ResourceBundle localRes) throws UnsupportedEncodingException {
         String greeting="";
-
+        
         switch (localHour){
             case 19:
             case 20:
             case 21:
-            case 22: greeting =  getEncode("Evening", localRes) + town +"!"; break;
+            case 22: greeting =  getEncode("Evening", localRes) + town +"!"; 
+                break;
             case 23:
             case 24:    
             case 0:
@@ -60,11 +64,14 @@ public class GetGreeting {
             case 2:
             case 3:
             case 4:
-            case 5: greeting =  getEncode("Night", localRes) + town +"!"; break;
+            case 5: greeting =  getEncode("Night", localRes) + town +"!"; 
+                break;
             case 6:
             case 7:
-            case 8: greeting = getEncode("Morning", localRes) + town +"!"; break;
-            default: greeting =  getEncode("Day", localRes) + town +"!"; break;
+            case 8: greeting = getEncode("Morning", localRes) + town +"!";
+                break;
+            default: greeting =  getEncode("Day", localRes) + town +"!";
+                break;
         }
         lf.log(Level.INFO, "--- Return greeting: " + greeting + " ---");
         return greeting;

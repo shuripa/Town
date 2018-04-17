@@ -8,6 +8,7 @@ import static org.junit.Assert.*;
 
 
 public class GetGreetingTest {
+//    TODO ????
     GetGreeting grt = new GetGreeting();
     TimeZone tz = TimeZone.getTimeZone("Pacific/Saipan");
     int t;
@@ -25,6 +26,7 @@ public class GetGreetingTest {
     public void getGreeting1() throws UnsupportedEncodingException {
         t = grt.getHour(grt.getTimeZoneInTown("Moscow"));
         assertEquals(grt.getGreeting("Moscow", t, res_xx), grt.getGreeting("Moscow"));
+        //TODO: TimeZone tz = TimeZone.getTimeZone("UTC");
         t = grt.getHour(TimeZone.getDefault());
         assertEquals(grt.getGreeting("Dnipro", t, res_xx), grt.getGreeting("Dnipro"));
     }
