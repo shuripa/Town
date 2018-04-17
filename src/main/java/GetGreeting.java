@@ -57,7 +57,8 @@ public class GetGreeting {
             }
         }
         lf.log(Level.INFO, "Timezone is default");
-        return TimeZone.getDefault();
+        //Correction Time Zone
+        return TimeZone.getTimeZone("UTC");
     }
 
     public String getHour(TimeZone tz){
