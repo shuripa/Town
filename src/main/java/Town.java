@@ -4,9 +4,15 @@ import org.apache.log4j.Logger;
 
 public class Town {
     //Changed swithc-case
-    private static final Logger LOGGER = Logger.getLogger(Town.class.getSimpleName());
+    private static Logger LOGGER;
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, UnsupportedEncodingException {
-        LOGGER.info("started");
+        try {
+            LOGGER = Logger.getLogger(Town.class.getSimpleName());
+            LOGGER.info("started");
+        }catch (Exception e){
+            System.out.println("" + e.getMessage());
+        }
+        
         String[] clName = {"GetGreetingWhisoutArgs", "GetGreetingWhisOneArg", "GetGreetingWhisTwoArgs"};
         int cnt = (args.length >2) ? 2: args.length;
         //Correction Name
@@ -19,4 +25,3 @@ public class Town {
         System.out.println(result);
     }
 }
-
