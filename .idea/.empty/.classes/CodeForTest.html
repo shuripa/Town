@@ -1,0 +1,213 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: CodeForTest</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">&lt;empty package name&gt;</a> ]
+</div>
+
+<h1>Coverage Summary for Class: CodeForTest (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">CodeForTest</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 11)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;import java.util.Calendar;
+<i>2</i>&nbsp;import java.util.TimeZone;
+<i>3</i>&nbsp;
+<i>4</i>&nbsp;
+<i>5</i>&nbsp;import java.util.Calendar;
+<i>6</i>&nbsp;import java.util.TimeZone;
+<i>7</i>&nbsp;
+<b class="nc"><i>8</i>&nbsp;public class CodeForTest {</b>
+<i>9</i>&nbsp;    public static void main(String[] args) {
+<i>10</i>&nbsp;
+<i>11</i>&nbsp;
+<b class="nc"><i>12</i>&nbsp;        String[] tzs = TimeZone.getAvailableIDs();</b>
+<b class="nc"><i>13</i>&nbsp;        String tn = &quot;&quot;;</b>
+<i>14</i>&nbsp;        Calendar c;
+<i>15</i>&nbsp;        String time;
+<i>16</i>&nbsp;//         for (int i = 0; i &lt; tzs.length; i++) {
+<b class="nc"><i>17</i>&nbsp;        for (String tz : tzs){</b>
+<i>18</i>&nbsp;//             System.out.println(tzs[i].lastIndexOf(&quot;/&quot;)+tzs[i]);
+<b class="nc"><i>19</i>&nbsp;            tn = tz.substring(tz.lastIndexOf(&quot; / &quot;) + 1, tz.length());</b>
+<b class="nc"><i>20</i>&nbsp;            System.out.print(tn + &quot; / &quot;);</b>
+<b class="nc"><i>21</i>&nbsp;            TimeZone gmt = TimeZone.getTimeZone(tn);</b>
+<b class="nc"><i>22</i>&nbsp;            System.out.print(gmt.getRawOffset()/60/60/1000 + &quot; / &quot;);</b>
+<b class="nc"><i>23</i>&nbsp;            c = Calendar.getInstance(TimeZone.getTimeZone(tn));</b>
+<b class="nc"><i>24</i>&nbsp;            time = c.get(Calendar.HOUR_OF_DAY) + &quot;:&quot; + c.get(Calendar.MINUTE) + &quot;:&quot; + c.get(Calendar.SECOND);</b>
+<b class="nc"><i>25</i>&nbsp;            System.out.println(time);</b>
+<i>26</i>&nbsp;        }
+<i>27</i>&nbsp;    }
+<i>28</i>&nbsp;
+<i>29</i>&nbsp;//         String str;
+<i>30</i>&nbsp;//         str.length();
+<i>31</i>&nbsp;//         str.lastIndexOf();
+<i>32</i>&nbsp;//         int i = str.substring();
+<i>33</i>&nbsp;
+<i>34</i>&nbsp;
+<i>35</i>&nbsp;//        //Инициализация tz ситемной тайм зоной
+<i>36</i>&nbsp;//         c = Calendar.getInstance();
+<i>37</i>&nbsp;//         tz = TimeZone.getDefault();
+<i>38</i>&nbsp;//         town = &quot;&quot;;
+<i>39</i>&nbsp;//         time = &quot;&quot;;
+<i>40</i>&nbsp;
+<i>41</i>&nbsp;
+<i>42</i>&nbsp;//        if (args.length == 0){
+<i>43</i>&nbsp;//            throw new RuntimeException(&quot;Не задан город&quot;);
+<i>44</i>&nbsp;//        }
+<i>45</i>&nbsp;//
+<i>46</i>&nbsp;//        if (args.length&gt;0) {
+<i>47</i>&nbsp;//            town = args[0];
+<i>48</i>&nbsp;//            if (args.length &gt; 1) {
+<i>49</i>&nbsp;//                //TODO: Необязательный параметр - реализовать протестировать
+<i>50</i>&nbsp;//                tz = TimeZone.getTimeZone(args[1]);
+<i>51</i>&nbsp;//                c = Calendar.getInstance(tz);
+<i>52</i>&nbsp;//            }
+<i>53</i>&nbsp;//        }
+<i>54</i>&nbsp;
+<i>55</i>&nbsp;    //TODO: Определение времени суток для города
+<i>56</i>&nbsp;
+<i>57</i>&nbsp;//        time = c.get(Calendar.HOUR_OF_DAY) + &quot;:&quot; + c.get(Calendar.MINUTE) + &quot;:&quot; + c.get(Calendar.SECOND);
+<i>58</i>&nbsp;//        System.out.println(&quot;Время: &quot; + time);
+<i>59</i>&nbsp;//        System.out.println(town);
+<i>60</i>&nbsp;//    }
+<i>61</i>&nbsp;
+<i>62</i>&nbsp;//    public static String getTown(){
+<i>63</i>&nbsp;//        return town;
+<i>64</i>&nbsp;//    }
+<i>65</i>&nbsp;//
+<i>66</i>&nbsp;//    public static String getTime(){
+<i>67</i>&nbsp;//        return time;
+<i>68</i>&nbsp;//    }
+<i>69</i>&nbsp;}
+<i>70</i>&nbsp;
+<i>71</i>&nbsp;
+<i>72</i>&nbsp;//import org.junit.Test;
+<i>73</i>&nbsp;//
+<i>74</i>&nbsp;//import java.util.Calendar;
+<i>75</i>&nbsp;//import java.util.TimeZone;
+<i>76</i>&nbsp;//
+<i>77</i>&nbsp;//import static org.junit.Assert.*;
+<i>78</i>&nbsp;//
+<i>79</i>&nbsp;//public class HelloTownTest {
+<i>80</i>&nbsp;//
+<i>81</i>&nbsp;//    @Test
+<i>82</i>&nbsp;//    public void TestMain() {
+<i>83</i>&nbsp;////        String [] a;
+<i>84</i>&nbsp;////
+<i>85</i>&nbsp;////        //3) Запуск без параметров
+<i>86</i>&nbsp;////        a = new String[0];
+<i>87</i>&nbsp;////        assertTrue(HelloTown.getTime().equals(&quot;&quot;));
+<i>88</i>&nbsp;////
+<i>89</i>&nbsp;////        //1) Передача 2-х параметров
+<i>90</i>&nbsp;////        a = new String[2];
+<i>91</i>&nbsp;////        a[0] = &quot;Kyiv&quot;;
+<i>92</i>&nbsp;////        a[1] = &quot;GMT+01:00&quot;;
+<i>93</i>&nbsp;////        HelloTown.main(a);
+<i>94</i>&nbsp;////        TimeZone tz = TimeZone.getTimeZone(a[1]);
+<i>95</i>&nbsp;////        Calendar c = Calendar.getInstance(tz);
+<i>96</i>&nbsp;////        String time = c.get(Calendar.HOUR_OF_DAY) + &quot;:&quot; + c.get(Calendar.MINUTE) + &quot;:&quot; + c.get(Calendar.SECOND);
+<i>97</i>&nbsp;////        System.out.println(HelloTown.getTown());
+<i>98</i>&nbsp;////        assertTrue(HelloTown.getTown().equals(&quot;Kyiv&quot;));
+<i>99</i>&nbsp;////        assertTrue(HelloTown.getTime().equals(&quot;&quot;+ time));
+<i>100</i>&nbsp;////
+<i>101</i>&nbsp;////        //2) Передача 1-го параметра
+<i>102</i>&nbsp;////        a = new String[1];
+<i>103</i>&nbsp;////        a[0] = &quot;Kyiv&quot;;
+<i>104</i>&nbsp;//////        tz = TimeZone.getDefault();
+<i>105</i>&nbsp;////        c = Calendar.getInstance();
+<i>106</i>&nbsp;////        time = c.get(Calendar.HOUR_OF_DAY) + &quot;:&quot; + c.get(Calendar.MINUTE) + &quot;:&quot; + c.get(Calendar.SECOND);
+<i>107</i>&nbsp;////        assertTrue(HelloTown.getTown().equals(&quot;Kyiv&quot;));
+<i>108</i>&nbsp;////        System.out.println(time);
+<i>109</i>&nbsp;////        assertTrue(HelloTown.getTime().equals(&quot;&quot;+ time));
+<i>110</i>&nbsp;//
+<i>111</i>&nbsp;//    }
+<i>112</i>&nbsp;//}
+<i>113</i>&nbsp;
+<i>114</i>&nbsp;//Example string
+<i>115</i>&nbsp;
+<i>116</i>&nbsp;//    TimeZone tz = TimeZone.getTimeZone(&quot;GMT+02:00&quot;);
+<i>117</i>&nbsp;//        System.out.println(c.toString());
+<i>118</i>&nbsp;
+<i>119</i>&nbsp;
+<i>120</i>&nbsp;//        System.out.println(&quot;TimeZone: &quot; + tz.getDisplayName());
+<i>121</i>&nbsp;//        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone(&quot;GMT+02:00&quot;));
+<i>122</i>&nbsp;//        int hour = cal.get(Calendar.HOUR_OF_DAY);
+<i>123</i>&nbsp;//        int min = cal.get(Calendar.MINUTE);
+<i>124</i>&nbsp;//        int sec = cal.get(Calendar.SECOND);
+<i>125</i>&nbsp;//        System.out.println(hour + &quot;:&quot; + min + &quot;:&quot; + sec);
+<i>126</i>&nbsp;
+<i>127</i>&nbsp;
+<i>128</i>&nbsp;//        System.out.println(&quot;Системное тaйм-зона: &quot; + TimeZone.getDefault());
+<i>129</i>&nbsp;//        System.out.println(tz.toString());
+<i>130</i>&nbsp;//        System.out.println(tz.getDisplayName());
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-04-12 20:15</div>
+</div>
+</body>
+</html>

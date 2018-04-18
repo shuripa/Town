@@ -10,7 +10,7 @@ public class GetGreeting {
     private final String D = "Day";
     private final String E = "Evening";
     private final String [] timeOfDays = {N, N, N, N, N, N, M, M, M, D, D, D, D, D, D, D, D, D, D, E, E, E, E, N, N};
-    static final org.apache.log4j.Logger LOGGER = org.apache.log4j.Logger.getLogger(Town.class.getSimpleName());
+    static final org.apache.log4j.Logger LOGGER = org.apache.log4j.Logger.getLogger(GetGreeting.class.getSimpleName());
 
     public GetGreeting() {
         //Changed log4j logger
@@ -20,9 +20,19 @@ public class GetGreeting {
     public String getGreeting(String [] args) throws UnsupportedEncodingException {
         String s = "Day";
         String town = args[0];
-        Integer localHour = Integer.parseInt(args[1]);
+        Integer hour = -1;
+        try {
+            hour = Integer.parseInt(args[1]);
+        }catch (NumberFormatException e){
+            LOGGER.warn("NumberFormatException. hour = " + args[1]);
+        }
         
-        if (localHour> -1 && localHour < 25) s = timeOfDays[localHour];
+        if (hour> -1 && hour < 25) {
+                s = timeOfDays[hour];
+            LOGGER.info("(-1 < hour < 25) = true. timeOfDays = " + s);
+        }else {
+            LOGGER.warn("(-1 < hour < 25) = false. timeOfDays = " + s);
+        }
         return encode(s, getRes(getLocale())) + town +"!";
     }
 
@@ -50,7 +60,7 @@ public class GetGreeting {
 
     public String getHour(TimeZone tz){
         String h = "" + Calendar.getInstance(tz).get(Calendar.HOUR_OF_DAY);
-        LOGGER.info("Get time is done: " + h);
+        LOGGER.info("Get time is done: hour = " + h);
         return h;
     }
 
@@ -64,5 +74,49 @@ public class GetGreeting {
         String encode = new String(localRes.getString(key).getBytes("ISO-8859-1"), "ISO-8859-5");
         LOGGER.info("Encoding is done");
         return encode;
+    }
+}
+
+class GetGreetingWhisoutArgs extends GetGreeting {
+
+    public GetGreetingWhisoutArgs(){
+        super();
+    }
+
+    public String getGreeting(String [] args) {
+        LOGGER.info("Without argument");
+        return "You should use arguments > Town [GMT+0]";
+    }
+}
+
+class GetGreetingWhisOneArg extends GetGreeting {
+
+    public GetGreetingWhisOneArg(){
+        super();
+    }
+
+    public String getGreeting(String [] args) throws UnsupportedEncodingException {
+        LOGGER.info("Submitted one argument");
+        TimeZone tz = getTimeZoneInTown(args[0]);
+        String hour = getHour(tz);
+        LOGGER.info("Town = " + args[0] + "; Time = "+ hour + "; Zone = " + tz.getID());
+        String [] pars = {args[0], hour};
+        return super.getGreeting(pars);
+    }
+}
+
+class GetGreetingWhisTwoArgs extends GetGreeting{
+
+    public GetGreetingWhisTwoArgs(){
+        super();
+    }
+
+    public String getGreeting(String [] args) throws UnsupportedEncodingException {
+        LOGGER.info("Submited two arguments");
+        TimeZone tz = TimeZone.getTimeZone(args[1]);
+        String hour = getHour(TimeZone.getTimeZone(args[1]));
+        LOGGER.info("Town = " + args[0] + "; Time = "+ hour + "; Zone = " + tz.getID());
+        String [] pars = {args[0], hour};
+        return super.getGreeting(pars);
     }
 }

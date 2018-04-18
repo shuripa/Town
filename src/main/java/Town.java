@@ -1,7 +1,9 @@
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
+
 import org.apache.log4j.Logger;
 
+@SuppressWarnings({"ALL", "ClassInDefaultPackage"})
 public class Town {
     //Changed swithc-case
     private static Logger LOGGER;

@@ -12,18 +12,19 @@ public class TownTest {
         String result;
 
 //        assertTrue("You should use arguments > Town [GMT+0]".equals(Town.getGreeting(s)));
-
+//
 //        s = new String[]{"AnyTown"};
 //        result = Town.getGreeting(s);
 //        result = result.substring(result.length()-8, result.length()-1);
 //        assertEquals("AnyTown", result);
-
-        // TODO: assertEquals("Any_Town", "Any Town");  
+//        assertEquals("AnyTown", "AnyTown");
+//
+//        // TODO: assertEquals("Any_Town", "Any Town");  
 //        s = new String[]{"Any Town"};
 //        result = Town.getGreeting(s);
 //        result = result.substring(result.length()-9, result.length()-1);
 //        assertEquals("Any_Town", result);
-
+//
 //        s = new String[]{"AnyTown", "GMT+0"};
 //        result = Town.getGreeting(s);
 //        result = result.substring(result.length()-8, result.length()-1);

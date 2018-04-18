@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="ISO-8859-5">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/GetGreeting.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Town.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/GetGreetingTest.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
