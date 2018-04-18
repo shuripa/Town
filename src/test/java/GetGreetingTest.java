@@ -10,7 +10,6 @@ import static org.junit.Assert.*;
 
 @SuppressWarnings({"ALL", "ClassInDefaultPackage"})
 public class GetGreetingTest {
-    //TODO: Chek this.
     GetGreeting grt = new GetGreeting();
     GetGreetingWhisoutArgs grtNone = new GetGreetingWhisoutArgs();
     GetGreetingWhisOneArg grtOne = new GetGreetingWhisOneArg();
