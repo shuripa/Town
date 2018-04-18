@@ -17,7 +17,6 @@ public class TownTest {
     public void getGreeting() throws UnsupportedEncodingException, InvocationTargetException, NoSuchMethodException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         String []s = new String[]{};
         String result;
-        
 
         assertTrue("You should use arguments > Town [GMT+0]".equals(Town.getGreeting(s)));
 
@@ -27,7 +26,7 @@ public class TownTest {
         assertEquals("AnyTown", result);
         assertEquals("AnyTown", "AnyTown");
 
-        // TODO: assertEquals("Any_Town", "Any Town");  
+        //assertEquals("Any_Town", "Any Town");  
         s = new String[]{"Any Town"};
         result = Town.getGreeting(s);
         result = result.substring(result.length()-9, result.length()-1);
