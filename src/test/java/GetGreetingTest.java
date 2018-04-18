@@ -1,4 +1,3 @@
-
 import org.junit.Test;
 import java.io.UnsupportedEncodingException;
 import java.util.Calendar;
@@ -11,7 +10,7 @@ import static org.junit.Assert.*;
 @SuppressWarnings({"ALL", "ClassInDefaultPackage"})
 public class GetGreetingTest {
     GetGreeting grt = new GetGreeting();
-    GetGreetingWhisoutArgs grtNone = new GetGreetingWhisoutArgs();
+
     GetGreetingWhisOneArg grtOne = new GetGreetingWhisOneArg();
     GetGreetingWhisTwoArgs grtTwo = new GetGreetingWhisTwoArgs();
     TimeZone tz = TimeZone.getTimeZone("Pacific/Saipan");
@@ -23,18 +22,19 @@ public class GetGreetingTest {
     ResourceBundle res_ru = ResourceBundle.getBundle("greet", new Locale("ru"));
     ResourceBundle res_xx = ResourceBundle.getBundle("greet", new Locale("xx"));
     String[] args;
-    String[] sdef =  new String[]{};
+
     String[] sone1 =  new String[]{"Moscow"};
     String[] sone2 =  new String[]{"Dnipro"};
     String[] stwo1 =  new String[]{"Moscow", "GMT+11"};
     String[] stwo2 =  new String[]{"Dnipro", "GMT-11"};
 
-    
+    GetGreetingWhisoutArgs grtNone = new GetGreetingWhisoutArgs();
+    String[] sdef =  new String[]{};
     @Test
-    public void GetGreetingWhisoutArgs() {
+    public void getGreeting() {
         assertEquals("You should use arguments > Town [GMT+0]", grtNone.getGreeting(sdef));
     }
-
+    
     @Test
     public void GetGreetingWhisOneArg() throws UnsupportedEncodingException {
         t = grtOne.getHour(grtOne.getTimeZoneInTown("Moscow"));
@@ -57,7 +57,7 @@ public class GetGreetingTest {
     }
 
 //    @Test
-//    public void Greeting.GetGreetingWhisTwoArgs() throws UnsupportedEncodingException {
+//    public void Greeting.GetGreeting() throws UnsupportedEncodingException {
 //        assertEquals("Добрый день, G-1!", grt.getGreeting("G-1", -1, res_ru));
 //        assertEquals("Доброй ночи, G0!", grt.getGreeting("G0", 0, res_ru));
 //        assertEquals("Good morning, G6!", grt.getGreeting("G6", 6, res_en));
