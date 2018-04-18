@@ -6,8 +6,6 @@ import java.util.ResourceBundle;
 import java.util.TimeZone;
 import static org.junit.Assert.*;
 
-
-@SuppressWarnings({"ALL", "ClassInDefaultPackage"})
 public class GetGreetingTest {
     GetGreeting grt = new GetGreeting();
 
@@ -55,17 +53,6 @@ public class GetGreetingTest {
         args = new String[]{"Dnipro", "GMT-11"};
         assertEquals(grtTwo.getGreeting(args), grtTwo.getGreeting(stwo2));
     }
-
-//    @Test
-//    public void Greeting.GetGreeting() throws UnsupportedEncodingException {
-//        assertEquals("Добрый день, G-1!", grt.getGreeting("G-1", -1, res_ru));
-//        assertEquals("Доброй ночи, G0!", grt.getGreeting("G0", 0, res_ru));
-//        assertEquals("Good morning, G6!", grt.getGreeting("G6", 6, res_en));
-//        assertEquals("Good day, G9!", grt.getGreeting("G9", 9, res_en));
-//        assertEquals("Добрый вечер, G22!", grt.getGreeting("G22", 22, res_ru));
-//        assertEquals("Доброй ночи, G24!", grt.getGreeting("G24", 24, res_ru));
-//        assertEquals("Good day, G25!", grt.getGreeting("G25", 25, res_en));
-//    }
 
     @Test
     public void getTimeZone() {
